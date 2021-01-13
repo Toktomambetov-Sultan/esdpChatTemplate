@@ -8,8 +8,6 @@ import {
 
 import "react-chat-widget/lib/styles.css";
 
-const CUSTOMER_MESSAGE_LISTENER_KEY = "client-listener";
-
 class Client extends Component {
   componentDidMount() {
     addResponseMessage("Welcome to our store!");

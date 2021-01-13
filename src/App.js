@@ -1,8 +1,7 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-import Client from './Client';
-import Agent from './Agent';
+import React from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Agent from "./Agent";
+import Client from "./Client";
 
 const App = () => {
   return (
@@ -10,18 +9,18 @@ const App = () => {
       <React.Fragment>
         <ul>
           <li>
-            <Link to='/'>Client Home</Link>
+            <Link to="/">Client Home</Link>
           </li>
           <li>
-            <Link to='/agent'>Agent Dashboard</Link>
+            <Link to="/agent">Agent Dashboard</Link>
           </li>
         </ul>
         <hr />
-        <Route exact path='/' component={Client} />
-        <Route path='/agent' component={Agent} />
+        <Route exact path="/" component={Client} />
+        <Route path="/agent" component={Agent} />
       </React.Fragment>
     </Router>
   );
-}
+};
 
 export default App;
